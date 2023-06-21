@@ -63,7 +63,7 @@ public class Main {
 
         for (var entry : heightMap.entrySet()) {
             if(minHeight == entry.getValue()) {
-                System.out.println(entry.getKey());
+                System.out.println(entry);
             }
         }
 

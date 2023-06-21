@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,7 +29,7 @@ public class Main {
         Map<String, Integer> heightMap = new HashMap<>();
         heightMap.put("Shrek", 225);
         heightMap.put("Optimus Prime", 9000);
-        heightMap.put("Sziproka", 131);
+        heightMap.put("Sziporka", 131);
         heightMap.put("Csuporka", 134);
         heightMap.put("Puszedli", 123);
         heightMap.put("X-Professzor", 185);
@@ -69,6 +67,24 @@ public class Main {
 
         // TODO egy ciklussal megoldani!!!
 
+
+        heightMap.replace("Sziporka", (heightMap.get("Sziporka") + 1));
+        System.out.println(heightMap.get("Sziporka"));
+
+
+        Map<String, List<Integer>> grades = new HashMap<>();
+        List<Integer> aliceGrades = new ArrayList<>();
+        aliceGrades.add(5);
+        aliceGrades.add(2);
+        aliceGrades.add(1);
+        grades.put("Alice", aliceGrades);
+
+        List<Integer> bobGrades = new ArrayList<>();
+        bobGrades.add(4);
+        bobGrades.add(3);
+        grades.put("Bob", bobGrades);
+
+        grades.put("Charlie", Arrays.asList(1,5,4,4,3));
 
     }
 
